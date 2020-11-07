@@ -1,0 +1,31 @@
+{
+  "name": "use-item-size",
+  "version": "0.0.0",
+  "description": "React hook for react-window VariableList",
+  "main": "lib/index.js",
+  "repository": "https://github.com/sergeyt/use-item-size.git",
+  "author": "Sergey Todyshev <stodyshev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "shallow-equal": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.165",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tsdx": "^0.14.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "ci": "yarn lint && yarn test && yarn build"
+  }
+}
