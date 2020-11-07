@@ -1,10 +1,12 @@
 {
   "name": "use-item-size",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React hook for react-window VariableList",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/sergeyt/use-item-size.git",
   "author": "Sergey Todyshev <stodyshev@gmail.com>",
   "license": "MIT",
