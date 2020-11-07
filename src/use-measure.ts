@@ -22,13 +22,16 @@ function createLayer(id: string) {
 export function measureElement(
   layerId: string,
   content: React.ReactElement,
-  width?: number
+  width?: number | string
 ) {
   const container = document.getElementById(layerId) || createLayer(layerId);
 
   if (isNumber(width)) {
     container.style.width = width + "px";
+  } else if (width) {
+    container.style.width = width;
   }
+
   container.innerHTML = renderToString(content);
   document.body.appendChild(container);
 
@@ -39,7 +42,7 @@ export function measureElement(
 
 type Options = {
   id?: string;
-  width?: number;
+  width?: number | string;
 };
 
 export function useMeasure({ id, width }: Options = {}) {

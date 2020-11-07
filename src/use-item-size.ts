@@ -13,10 +13,10 @@ type RenderFn = ({
 }: Partial<{ index: number; measuring: boolean }>) => any;
 
 type Options = {
-  id: string;
+  id?: string;
   data: any[];
   children: RenderFn;
-  width: number;
+  width?: number | string;
   getKey?: (rec: any) => any;
   refresh: () => void;
   cacheDeps?: any;
