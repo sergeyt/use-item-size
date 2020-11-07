@@ -7,7 +7,7 @@ const containerStyle = {
   display: "inline-flex",
   position: "absolute",
   visibility: "hidden",
-  zIndex: -1,
+  zIndex: -1
 };
 
 function createLayer(id: string) {

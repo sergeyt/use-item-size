@@ -9,7 +9,7 @@ function defaultGetKey(rec: any) {
 
 type RenderFn = ({
   index,
-  measuring,
+  measuring
 }: Partial<{ index: number; measuring: boolean }>) => any;
 
 type Options = {
@@ -29,13 +29,13 @@ export function useItemSize({
   width,
   getKey = defaultGetKey,
   refresh,
-  cacheDeps,
+  cacheDeps
 }: Options) {
   const cache = useCache({ data, width, ...cacheDeps }, refresh);
   const measure = useMeasure({ id, width });
 
   const itemSize = useCallback(
-    (index) => {
+    index => {
       const rec = data[index];
       const key = getKey(rec);
       let result: number;
