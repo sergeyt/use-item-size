@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.20",
-    "shallow-equal": "^1.2.1"
+    "shallow-equal": "^3.0.0"
   },
   "devDependencies": {
     "@types/lodash": "4.14.165",
