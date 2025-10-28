@@ -20,7 +20,7 @@ jobs:
       - name: set up node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "24.x"
 
       - name: run lint, build and test
         run: yarn install && yarn ci
